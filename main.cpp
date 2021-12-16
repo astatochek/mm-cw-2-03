@@ -37,11 +37,14 @@ int main() {
         mask |= (long long)1 << townIndex;
 
 
-    //std::cout << std::bitset<n>(mask) << "\n";
-
     for (auto &vert: MustGoTowns)
         out << vert << " ";
     out << "\n";
+
+    std::cout << "Must be in path: ";
+    for (auto &vert: MustGoTowns)
+        std::cout << vert << " ";
+    std::cout << "\n";
 
     if (!metric)
     {
@@ -121,6 +124,7 @@ int main() {
     std::cout << "\nLogistics done\n\n";
 
 
+    // Grredy Result Output
     std::pair <std::vector <int>, int> greedyRes = greedy(Logistics, ref, MustGoTowns);
 
     out << greedyRes.first[0];
@@ -134,6 +138,8 @@ int main() {
     std::cout << ")\nGreedy Result: " << greedyRes.second << "\n";
 
 
+
+    // Ant Colony Result Output
     std::pair <std::vector <int>, int> antRes = ants(Matrix, Logistics, mask, ref, MustGoTowns, false);
 
     out << antRes.first[0];
@@ -147,6 +153,8 @@ int main() {
     out << "\nAnt Colony Result: " << antRes.second << "\n";
     std::cout << ")\nAnt Colony Result: " << antRes.second << "\n";
 
+
+    // Branch and Bound Output
 
     std::pair <std::vector <int>, int> branchRes = branchAndBound(Logistics, ref, MustGoTowns);
 
@@ -162,6 +170,7 @@ int main() {
     out << "\nBranch and Bound: " << branchRes.second;
     std::cout << ")\nBranch and Bound: " << branchRes.second << "\n";
 
+    // End of Output
 
     out.close();
 
