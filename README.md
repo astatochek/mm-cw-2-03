@@ -1,6 +1,6 @@
 # Coursework_3
 Для использования требуется установить [CLion](https://www.jetbrains.com/help/clion/installation-guide.html) (или [Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)) и [PyCharm](https://www.jetbrains.com/ru-ru/pycharm/download/#section=windows), а также Visual Studio 2019 как компилятор для CLion (или Visual Studio Code) и библиотеки [matplotlib](https://matplotlib.org/stable/users/installing/index.html), [numpy](https://numpy.org/install/), [neworkx](https://networkx.org/documentation/stable/install.html).
-После скачивания репозитория папку с ним нужно открыть в CLion, а папку в нем "Python Part" в PyCharm.
+После скачивания репозитория папку с ним нужно открыть в CLion или VS Code, а папку в нем "Python Part" в PyCharm.
 Для запуска программы требуется запустить ее в CLion, в консоль необходимо ввести три числа: 1 или 0 (требется или не требуется визуализация), n - количество вершин в графе,
 m - количество вершин, необходимых для посещения ( m <= n). По завершении работы программы в консоль выводятся результаты работы трех алгоритмов. Если выл выбран режим с визуализацией, в файл file.txt будут выведены неоходимые входные данные для main.py. В таком случае далее требуется запустить код в PyCharm. В результате на экран будут выведены графы с выделенными на них путями, соответствующими каждому из алгоритмов.
 
