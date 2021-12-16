@@ -1,0 +1,7 @@
+# ninja log v5
+21	497	6613552869703186	CMakeFiles/Coursework_3.dir/Greedy.cpp.obj	11870a7657ff0acf
+0	961	6613552874365721	CMakeFiles/Coursework_3.dir/main.cpp.obj	189a91f41b8d45b7
+24	746	6613552872183899	CMakeFiles/Coursework_3.dir/BranchAndBound.cpp.obj	d030df25792d5bc
+17	926	6613552874006685	CMakeFiles/Coursework_3.dir/AntColony.cpp.obj	80f03bebfb870882
+1	657	6613554115552288	CMakeFiles/Coursework_3.dir/Functions.cpp.obj	a74681bf90b2b37a
+659	1343	6613554122324531	Coursework_3.exe	2f49852c0f1c3305
